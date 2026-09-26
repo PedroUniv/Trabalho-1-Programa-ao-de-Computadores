@@ -90,15 +90,51 @@ int main()
         //Seguir Ordem numeroConta, nomeCliente, cpf, tipoConta (Poupança/Corrente), saldoAtual
 
         case 2: 
-        cout << ("Consultar Conta");
+            if (total == 0){
+                cout << ("Nenhuma Conta Cadastrada.\n");
+            break;
+        }
+        
+        cout << ("\n----Dados da Conta----\n");
+        cout << "Numero da Conta: " << numeroConta << "\n";
+        cout << "Nome do Titular: " << nomeCliente << "\n";
+        cout << "CPF do Titular: " << cpf << "\n";
+        if (tipoConta == Poupanca){
+            cout << "Conta Poupança\n";
+        }else{
+            cout << "Conta Corrente\n";
+        }
+
+        cout << "Saldo da Conta: R$" << saldoAtual << "\n";
+        if (contaAtiva){
+            cout << "Conta Existente!\n";
+        }else{
+            cout << "Conta não cadastrada.\n";
+        }
         break;
+
+        //------------------------Verificar Saldo---------------------
 
         case 3: 
-        cout << ("Verificar Saldo");
+        if (total == 0){
+            cout << ("Nenhuma Conta Cadastrada.\n");
+            break;
+        }
+
+        if (!contaAtiva){
+            cout << "Conta não cadastrada.\n";
+            break;
+        }
+
+        cout << "Saldo Atual: R$" << saldoAtual << "\n";
         break;
 
+        //------------------------Alterar Tipo de Conta---------------------
+
         case 4: 
-        cout << ("Alterar Tipo da Conta");
+        if (total == 0){
+            cout << ("Nenhuma Conta Cadastrada.\n");
+        }
         break;
 
         case 5: 
