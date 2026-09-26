@@ -18,14 +18,14 @@ Na primeira etapa, o sistema deverá permite o cadastro de uma conta bancária u
 
 
 3.1. Variáveis obrigatórias
-Variável Tipo FinalidadenumeroConta int Número da conta
-nomeCliente string Nome do titular
-cpf string CPF do titular
-tipoConta int 1 = Corrente; 2 = Poupança
-saldo double Saldo atual
-contaAtiva bool Indica se a conta está ativa
-3.2. Menu
+numeroConta | int |Número da conta
+nomeCliente | string | Nome do titular
+cpf | string | CPF do titular
+tipoConta | int 1 = Corrente; 2 = Poupança|
+saldo | double | Saldo atual
+contaAtiva | bool | Indica se a conta está ativa
 
+3.2. Menu
 
 O sistema deverá iniciar e manter um menu em execução, com as seguintes opções:
 1 - Cadastrar conta
