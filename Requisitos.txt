@@ -21,7 +21,7 @@ Na primeira etapa, o sistema deverá permite o cadastro de uma conta bancária u
 numeroConta | int |Número da conta
 nomeCliente | string | Nome do titular
 cpf | string | CPF do titular
-tipoConta | int 1 = Corrente; 2 = Poupança|
+tipoConta | int 1 = Corrente; 2 = Poupança
 saldo | double | Saldo atual
 contaAtiva | bool | Indica se a conta está ativa
 

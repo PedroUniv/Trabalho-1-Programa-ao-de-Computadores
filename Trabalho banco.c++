@@ -12,8 +12,18 @@ using namespace std;
 int main()
 {
     //Variaveis
-    int ;
-    string ; 
-    
+
+    string nomeCliente, cpf;
+    int numeroConta;
+    int Poupanca = 1, Corrente = 2;
+    double saldoAtual;
+    bool contaAtiva;
+
+
+
+    //Código
+
+    cout << ("Teste");
+
     return 0;
 }
