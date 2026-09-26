@@ -29,7 +29,7 @@ int main()
 
     //Código
 
-    //cout << ("Teste");
+  do{    //cout << ("Teste");
     cout << ("\n***************************\n");
     cout << ("**   BANCO PEDROBANK'S   **\n");
     cout << ("***************************\n");
@@ -134,22 +134,54 @@ int main()
         case 4: 
         if (total == 0){
             cout << ("Nenhuma Conta Cadastrada.\n");
+            break;
+        }
+
+        if (!contaAtiva){
+            cout << "Conta não cadastrada.\n";
+            break;            
+        }
+
+        cout << "Alterar Conta (1 - Poupança / 2 - Corrente): ";
+        cin >> tipoConta;
+        if (tipoConta != Poupanca && tipoConta != Corrente){
+            cout << ("Tipo de Conta Invalida.\n");
+            break;
+        }
+
+        cout << ("Tipo da conta alterada com sucesso.\n");
+        break;
+
+        //------------------------ATIVAR / DESATIVAR CONTA---------------------        
+
+        case 5: 
+        if (total == 0){
+            cout << ("Nenhuma Conta Cadastrada.\n");
+            break;            
+        }
+        
+        if (contaAtiva){
+            contaAtiva = false;
+            cout << ("Conta DESATIVADA.");
+        } else {
+            contaAtiva = true;
+            cout << ("Conta ATIVADA.");
         }
         break;
 
-        case 5: 
-        cout << ("Ativar/Desativar Conta");
-        break;
+        //------------------------SAIR---------------------              
 
         case 6: 
-        cout << ("Sair");
+        cout << ("Sair\n");
         break;
 
         default: 
-        cout << ("Opção Invalida");
+        cout << ("Opção Invalida\n");
         break;
         
     }
+
+}while (banco != 6);
 
     return 0;
 }
