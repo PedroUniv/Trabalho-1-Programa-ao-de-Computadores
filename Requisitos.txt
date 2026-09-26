@@ -1,0 +1,64 @@
+Trabalho – Implementação de um Sistema de
+Registro e Gestão de Contas Bancárias (ETAPA 1)
+
+1. Descrição completa do trabalho ( 3 etapas)
+Este trabalho propõe o desenvolvimento incremental de um Sistema de Registro e Gestão de Contas Bancárias em C++. O projeto foi concebido para acompanhar a progressão dos conteúdos da disciplina INF01, começando com variáveis e estruturas de controle, evoluindo para arrays e funções e, por fim, chegando à persistência de dados em arquivos.
+A característica central da proposta é que as três etapas representam a evolução do mesmo sistema. As limitações encontradas em uma etapa devem servir como motivação para o conteúdo apresentado na etapa seguinte.
+
+
+2. Pontuação e Entrega do Trabalho
+Conteúdo: Etapa 1, conforme descrito neste documento.
+Valor: 10 pontos
+Data: 30/09/2026
+Formato de entrega:  Organizar seu trabalho no Github e compartilhar com o professor  Mostrar o programa funcionando no laboratório na data descrita acima
+
+
+3. Etapa 1 – Descrição
+Na primeira etapa, o sistema deverá permite o cadastro de uma conta bancária utilizando somente variáveis individuais. A finalidade é consolidar os fundamentos da linguagem C++.
+
+
+3.1. Variáveis obrigatórias
+Variável Tipo FinalidadenumeroConta int Número da conta
+nomeCliente string Nome do titular
+cpf string CPF do titular
+tipoConta int 1 = Corrente; 2 = Poupança
+saldo double Saldo atual
+contaAtiva bool Indica se a conta está ativa
+3.2. Menu
+
+
+O sistema deverá iniciar e manter um menu em execução, com as seguintes opções:
+1 - Cadastrar conta
+2 - Consultar conta
+3 - Verificar saldo
+4 - Alterar tipo da conta
+5 - Ativar/Desativar conta
+6 – Sair
+
+ A estrutura switch deverá ser utilizada para selecionar a operação. O menu deverá
+permanecer ativo até que a opção de saída (6) seja escolhida, preferencialmente
+utilizando do while.
+ Dê um nome ao seu Sistema e faça com que ele apareça no menu. Ex:
+
+********************************
+** BANCO INF101 **
+********************************
+
+3.3. Cadastro
+ O programa deverá solicitar o número da conta, nome do titular, CPF, tipo da conta e
+saldo inicial. O aluno deverá validar entradas básicas, como número positivo, saldo não
+negativo e tipo de conta válido.
+
+
+3.4. Validações
+ Número da conta deve ser maior que zero.
+ Saldo inicial não pode ser negativo.
+ Tipo da conta deve ser 1 ou 2.
+ Operações que dependam de conta ativa devem verificar contaAtiva.
+
+
+3.5. Desafios e questões a serem respondidas
+ Acrescente mais variáveis no cadastro, caso queira testar.
+ Comente seu código sempre que possível
+ Se quisessemos cadastrar de até 5 contas, qual solução seria possível? Implemente
+esta solução.
